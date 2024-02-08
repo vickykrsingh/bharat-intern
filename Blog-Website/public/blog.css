@@ -1,0 +1,43 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #007bff;
+}
+
+.container {
+  max-width: 50%;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-family: "CursiveFont", cursive;
+}
+
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.blog-post {
+  width: 45%;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .blog-post {
+    width: 100%;
+  }
+}

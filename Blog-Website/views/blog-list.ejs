@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/blog.css" />
+    <title>Blog List</title>
+  </head>
+  <body>
+    <h1>Blog List</h1>
+
+    <div class="blog-list">
+      <% blogPosts.forEach(post => { %>
+      <div class="blog-post">
+        <h3><%= post.title %></h3>
+        <p><%= post.content %></p>
+      </div>
+      <% }); %>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/blog.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #007bff; /* Change background color */
+      }
+
+      h1 {
+        text-align: center;
+        color: #fff; /* Change text color to contrast with the background */
+        font-family: "CursiveFont", cursive; /* Add cursive font */
+      }
+
+      /* ... rest of your styles ... */
+    </style>
+    <title>Blog List</title>
+  </head>
+  <body>
+    <h1><span style="font-style: italic">Blog List</span></h1>
+
+    <div class="blog-list">
+      <% blogPosts.forEach(post => { %>
+      <div class="blog-post">
+        <h3><%= post.title %></h3>
+        <p><%= post.content %></p>
+      </div>
+      <% }); %>
+    </div>
+  </body>
+</html>
